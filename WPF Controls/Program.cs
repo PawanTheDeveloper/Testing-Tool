@@ -1,22 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿/*
+ * Created by SharpDevelop.
+ * User: administrator
+ * Date: 11/08/2009
+ * Time: 11:31 AM
+ * 
+ * To change this template use Tools | Options | Coding | Edit Standard Headers.
+ */
+using System;
 using System.Windows.Forms;
 
-namespace WPF_Controls
+namespace TesterBuddy
 {
-    static class Program
-    {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
-        [STAThread]
-        static void Main()
-        {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
-        }
-    }
+	/// <summary>
+	/// Class with program entry point.
+	/// </summary>
+	internal sealed class Program
+	{
+		/// <summary>
+		/// Program entry point.
+		/// </summary>
+		[STAThread]
+		private static void Main(string[] args)
+		{
+			Application.EnableVisualStyles();
+			Application.SetCompatibleTextRenderingDefault(false);
+			Application.Run(new MainForm());
+		}
+		
+	}
 }

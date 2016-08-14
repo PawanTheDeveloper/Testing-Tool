@@ -1,0 +1,49 @@
+﻿IE_Path = "c:\Program Files\Internet Explorer\iexplore.exe "
+FireFox_Path = "c:\Program Files\Mozilla Firefox\firefox.exe "
+VNC_Path = "C:\Program Files\RealVNC\VNC4\vncviewer.exe "
+Putty_Path = "C:\Program Files\PuTTY\putty.exe "
+WinSCP_Path = "C:\Program Files\WinSCP\WinSCP.exe "
+Logs_Path = "C:\TesterLogs\"
+Commands_Template_Path = "C:\TesterLogs\Commands"
+JMeter_Path = "C:\jakarta-jmeter-r882651\bin\jmeter.bat "
+STAF_Path = ""C:\STAF\bin\Staf.exe "
+
+Putty_Defualt_User_Name = root
+Putty_Default_Password = diet4coke
+
+Remote_Desktop_User_Name = administrator
+Remote_Desktop_Password = diet4coke@
+
+ScreenShot_Path = "C:\TesterLogs\ScreenShot"
+ScreenShot_FileNamePrefix = ScreenShot_
+ScreenShot_X = 0
+ScreenShot_Y = 0
+ScreenShot_L = 1600
+ScreenShot_W = 900
+
+
+#FireFox/IE/EMBEDDED/GENERIC
+Default_Selected_Browser = FireFox
+#Runtime/Toolkit
+Default_Machine_Type = RunTime
+
+Number_Stores_Ids = 2
+Store_Id1 = 10152
+Store_Id2 = 10153
+
+
+Number_Catalog_Ids = 0
+
+Number_Stores = 2
+Store_Name1 = Madisons
+Store_Name2 = Elite
+
+Default_Store_Id = 10152
+Default_Store_Name = Madisons
+
+Default_WAS_Admin_Console_Port = 9102
+
+TeamSync = true
+TeamMember1 = Lekha
+TeamMember1 = Pradeep
+TeamMember1 = Preeti

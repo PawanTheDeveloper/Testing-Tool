@@ -46,14 +46,46 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="AdminConsoleTask.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="AdminConsoleTask.designer.cs">
+      <DependentUpon>AdminConsoleTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommandBuilder.cs" />
+    <Compile Include="DBInvoker.cs" />
+    <Compile Include="FileItemReaderWriter.cs" />
+    <Compile Include="HostInfo.cs" />
+    <Compile Include="HostNameDialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HostNameDialog.designer.cs">
+      <DependentUpon>HostNameDialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ListenerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ListenerForm.designer.cs">
+      <DependentUpon>ListenerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ScreenShot.cs" />
+    <EmbeddedResource Include="HostNameDialog.resx">
+      <DependentUpon>HostNameDialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ListenerForm.resx">
+      <DependentUpon>ListenerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -72,9 +104,18 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="settings.dat" />
+    <None Include="TesterBuddy.cd" />
+    <None Include="TesterBuddy.PartCover.Settings" />
+    <None Include="TesterBuddy.pidb" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images.ico" />
+    <Content Include="TesterBuddy.csproj" />
+    <Content Include="TesterBuddy.sln" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
